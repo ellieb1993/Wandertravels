@@ -33,6 +33,9 @@ nav a {margin-left: 1rem;
 text-decoration: none;
 color: seashell;}
 
+nav a:hover {color: burlywood;
+transition-duration: 0.5s;}
+
 /*Banner*/
 
 #mission {width: 100%;
@@ -59,19 +62,65 @@ color: black;
 background-color: white;
 padding-bottom: 1rem;}
 
+/*Team section*/
+
 .container {width: 100%;
 display: flex;
-justify-content: space-around;
+flex-wrap: wrap;
+justify-content: center;
 background: linear-gradient(#000000, #040a17);
 margin-bottom: 1.5rem;
-padding-top: 1.5rem;}
+padding-top: 1.5rem}
 
-figure {width: 30%;}
+figure {width: 30%;
+min-width: 18.25rem;
+margin: 0 1rem;}
 
-figure img {width: 100%;
-opacity: 1;}
+figure img {width: 100%;}
 
 figcaption {text-align: center;
 color: seashell;
 font-size: 2rem;
 padding-bottom: 1rem;}
+
+/*Gallery section*/
+
+.gallery {display: flex;
+flex-wrap: wrap;
+width: 100%;
+justify-content: space-around;}
+
+.gallery figure {width: 26rem;
+margin-bottom: 1rem;}
+
+/*Contact section*/
+
+#contact h2 {font-family: "Caveat";
+font-weight: 700;
+font-size: 5rem;}
+
+.contact p {text-align: center;
+color: black;
+font-size: 2rem;
+margin-bottom: 1rem;
+letter-spacing: 0.2rem;}
+
+/*Footer*/
+
+footer p {font-family: "Smooch Sans", sans-serif;
+color: black;
+text-align: left;
+font-size: 1.3rem;
+padding-left: 1rem;}
+
+/*Media query for mobile phones*/
+
+@media screen and (max-width: 630px) {
+
+.logo {display: none;}
+
+nav {justify-content: center;}
+
+.container {flex-wrap: wrap;}
+
+}
